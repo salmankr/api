@@ -17,4 +17,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/students/{id}' , 'studentApiController@single');
+Route::get('/students/{id}' , 'studentApiController@single')->name('student.single');
+Route::get('/students' , 'studentApiController@index')->name('student.all');
