@@ -19,6 +19,7 @@ class studentRes extends JsonResource
            'Roll Number' => $this->roll_no,
            'Section' => $this->section,
            'teacher name' => $this->teacher== '' ? 'Teacher Not Assigned Yet' : $this->teacher,
+           'links' => 'None at the moment'
         ];
     }
 }

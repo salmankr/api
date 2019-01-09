@@ -13,6 +13,6 @@ class studentApiController extends Controller
         return new studentRes(student::find($id)); 
     }
     public function index(){
-    	return studentResCollection::collection(student::all());
+    	return studentResCollection::collection(student::paginate(15));
     }
 }
