@@ -16,10 +16,10 @@ class studentRes extends JsonResource
     {
         return [
            'name' => $this->name,
-           'Roll Number' => $this->roll_no,
+           'roll_no' => $this->roll_no,
            'Section' => $this->section,
-           'teacher name' => $this->teacher== '' ? 'Teacher Not Assigned Yet' : $this->teacher,
-           'links' => 'None at the moment'
+           'teacher' => $this->teacher== '' ? 'Teacher Not Assigned Yet' : $this->teacher,
+           'links' => 'None at the moment',
         ];
     }
 }

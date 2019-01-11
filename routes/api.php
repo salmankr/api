@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/students/{id}' , 'studentApiController@single')->name('student.single');
 Route::get('/students' , 'studentApiController@index')->name('student.all');
+Route::post('/students', 'studentApiController@create');
