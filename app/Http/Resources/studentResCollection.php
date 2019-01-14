@@ -18,7 +18,7 @@ class studentResCollection extends Resource
            'name' => $this->name,
            'Roll Number' => $this->roll_no,
            'links' => [
-                'student_link' => Route('student.single', $this->id),
+                'student_link' => Route('student.single', ['id' => $this->id]),
            ],
         ];
     }
